@@ -8,5 +8,5 @@ exports.up = async function (knex) {
 };
 
 exports.down = async function (knex) {
-  await knex.dropTableIfExists("animals");
+  await knex.schema.dropTableIfExists("animals");
 };

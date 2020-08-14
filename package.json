@@ -4,9 +4,9 @@
   "description": "Node Server Testing Challenge",
   "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "cross-env DB_ENV=production node index.js",
     "server": "nodemon -r dotenv/config index.js",
-    "test": "jest --watch"
+    "test": "cross-env DB_ENV=testing jest --watch"
   },
   "jest": {
     "testEnvironment": "node"
